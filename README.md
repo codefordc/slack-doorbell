@@ -1,5 +1,10 @@
-![](https://slack.global.ssl.fastly.net/21506/img/icons/ios-64.png)
+<img src="http://i.imgur.com/xVK1lIj.png" alt="Slack Doorbell" style="width: 150px;"/>
+
 # Slack Doorbell
+
+Node.js-based service that forwards a text message to a Slack channel, using Twilio.
+
+You've got a locked door and a busy event. You have a team that can open said door. Put them to use.
 
 
 ## 0. Download the code.
@@ -27,8 +32,7 @@ $ npm install
 
 ## 1. Set up an Incoming Webhook on Slack.
 
-In Slack, find the Configure Integrations menu. Create a new Incoming Webhook integration, and set the channel, username, and icon. (We're using the 'monkey' emoji.)
-
+In Slack, find the Configure Integrations menu. Create a new Incoming Webhook integration, and set the channel, username, and icon. (We're using our '#door' channel, username 'Alfred', and a 'monkey' emoji.)
 
 ## 2. Set up Twilio.
 
@@ -71,7 +75,7 @@ $ docker build --no-cache -t "YOUR_USERNAME/slack-doorbell" .
 
 Then, to run the service on port 8080, do:
 
-```
+```sh
 # Change the port number if you get an "address in use" error (EADDRINUSE).
 $ PORT=8080 node index.js
 ```
@@ -92,3 +96,8 @@ You should see a pleasant message confirming the request, and see a mostly empty
 ## 5. Deploy.
 
 Instructions to come.
+
+## 6. Subscribe
+
+Set the channel topic so that it contains the text number. People __will__ need to refer to it.
+Request that all your potential door-openers join your doorbell channel. In the channel menu (click the channel name), set your notifications to 
