@@ -6,6 +6,7 @@ Node.js-based service that forwards a text message to a Slack channel, using Twi
 
 You've got a locked door and a busy event. You have a team that can open said door. Put them to use.
 
+<small>_Icon attribution_: "Pointing" icon designed by <a href="http://www.thenounproject.com/laurent.canivet.98">Laurent Canivet</a> from the <a href="http://www.thenounproject.com">Noun Project</a>. Slack icon from [Slack](https://slack.com). Mashed up by [beechnut](https://github.com/beechnut).</small>
 
 ## 0. Download the code.
 
