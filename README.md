@@ -101,4 +101,4 @@ Instructions to come.
 ## 6. Subscribe
 
 Set the channel topic so that it contains the text number. People __will__ need to refer to it.
-Request that all your potential door-openers join your doorbell channel. In the channel menu (click the channel name), set your notifications to 
+Request that all your potential door-openers join your doorbell channel. In the channel menu (click the channel name), set your notifications so they always appear on desktop and they push to mobile devices.
