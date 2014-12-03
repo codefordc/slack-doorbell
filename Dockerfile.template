@@ -1,0 +1,9 @@
+FROM node:0.10-onbuild
+
+ENV SLACK_DOMAIN        # Your organization's Slack subdomain, i.e. SLACK_DOMAIN.slack.com
+ENV SLACK_URL           # "Webhook URL" from Slack's Incoming WebHooks setup page
+ENV TWILIO_ACCOUNT_ID   # "Account SID" from https://www.twilio.com/user/account/voice-messaging
+ENV TWILIO_AUTH_TOKEN   # "Auth Token"  from https://www.twilio.com/user/account/voice-messaging
+ENV TWILIO_PHONE_NUMBER # Your eleven-digit phone number 1XXXXXXXXXX. No plus sign.
+
+EXPOSE 8080

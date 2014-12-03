@@ -8,13 +8,15 @@ var server = restify.createServer({
   version: '0.0.1'
 });
 
+
 server.pre(restify.pre.sanitizePath());
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
 server.use(restify.authorizationParser());
 
-server.post('/messages', function (request, response, next) {
+
+server.post('/', function (request, response, next) {
   var phoneNumber = request.params.From;
   var message = request.params.Body;
 
@@ -28,6 +30,7 @@ server.post('/messages', function (request, response, next) {
     response.send(200, 'ok');
   });
 });
+
 
 if (!module.parent) {
   server.listen(process.env.PORT || 8080, function () {
