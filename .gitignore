@@ -1,3 +1,4 @@
 node_modules
 *.un~
 Dockerfile
+.env
