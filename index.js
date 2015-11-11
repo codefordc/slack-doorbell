@@ -27,7 +27,7 @@ server.post('/', function (request, response, next) {
       response.send(500, err);
     }
     messenger.send(phoneNumber, 'Got it! Someone will be up shortly to let you in.');
-    response.send(200, 'ok');
+    // response.send(200, 'ok');
   });
 });
 
